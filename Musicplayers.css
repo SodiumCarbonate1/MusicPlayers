@@ -1,0 +1,291 @@
+body{
+    background:url("cropped-moumoon_0256re-scaled-4.jpg") no-repeat;
+    background-size: 100% 260%;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: mediumpurple;
+    opacity: 1;
+    font-family: 'Poppins',sans-serif;
+}
+
+nav .logo{
+    opacity: 1;
+    color:white;
+    text-transform: uppercase;
+    text-space: 5px;
+    font-size: 20px;
+}
+nav ul{
+    opacity: 1;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+nav ul li a{
+    opacity: 1;
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.folder div{
+    opacity: 1;
+    width:30px;
+    height:5px;
+    background-color: white;
+    margin:5px;
+    cursor: pointer;
+    display: none;
+
+}
+.visiable{
+    visibility: hidden;
+}
+.notvisiable{
+    visibility: visible;
+}
+.main {
+    width: 1100px;
+    height: 500px;
+    background: url("1RSDmV.png") no-repeat;
+    margin-top: 150px;
+    margin-left: 500px;
+    align-items: center;
+    box-shadow: 10px 15px 30px 1px pink;
+    position: relative;
+    opacity: 80%;
+    border-radius: 10px;
+}
+
+.introduction {
+    visibility: hidden;
+    position: absolute;
+    left: 0px;
+    top: 200px;
+    width: 2000px;
+    height: 700px;
+    background: white;
+    border-radius: 10px;
+    z-index: -1;
+    color: grey;
+
+}
+
+.introduction .picture{
+    float: left;
+    position:absolute;
+    border-radius: 10px;
+    left: 6px;
+    top: 8px;
+}
+
+
+.introduction .selfintro {
+    position: absolute;
+    left: 700px;
+    top: -4px;
+    font-size: 15px;
+}
+
+
+.main ul li{
+    list-style: none;
+    display: inline-block;
+    position: absolute;
+
+}
+.main ul li img{
+    border-radius:50%;
+    cursor: pointer;
+}
+
+.song1 {top:  30px;   left: 15px}
+.song2 {top: 149px;left: 131px}
+.song3 {top: 260px;left: 245px}
+.song4 {top: 30px;left: 245px}
+.song5 {top: 147px;left: 362px}
+.song6 {top: 256px;left: 471px;}
+.song7 {top: 30px; left: 470px}
+.song8 {top: 147px; left: 580px}
+.song9 {top: 258px;left: 694px;}
+.song10 {top: 32px;left: 697px;}
+.song11 {top: 143px;left: 809px;}
+.song12 {top: 258px;left: 921px;}
+
+
+.music{
+    width:700px;
+    height: 120px;
+    background: pink;
+    position: relative;
+    left: 0;
+    bottom: 70px;
+    opacity: 80%;
+    margin-top: 150px;
+    box-shadow: 10px 15px 30px 1px black;
+    color: black;
+}
+.music .image{
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+}
+
+.music .title1 {
+    float: left;
+    font-size: 25px;
+    margin-top: 43px;
+    margin-left: 20px;
+}
+
+.music .button{
+    float: left;
+    position: absolute;
+    left: 280px;
+}
+.music .button:hover{
+    color: white;
+}
+
+.music .previous{
+    float: left;
+    width:40px;
+    height:40px;
+    margin-top: 40px;
+    margin-left: 130px;
+    color: black;
+
+}
+.music .previous:hover{
+    color: white;
+}
+.music .stop{
+    float: left;
+    width:40px;
+    height:40px;
+    margin-top: 40px;
+    margin-left: 40px;
+    color: black;
+}
+.music .stop:hover{
+    color: white;
+}
+
+.music .next{
+    float: left;
+    width:40px;
+    height:40px;
+    margin-top: 40px;
+    margin-left: 40px;
+    color: black;
+}
+
+.music .next:hover{
+    color: white;
+}
+.music .close {
+    float: right;
+    width: 10px;
+    height: 100%;
+    margin-top: 52px;
+    margin-left: 60px;
+    cursor:pointer;
+    color: black;
+}
+.music .close:hover{
+    color:white;
+}
+
+@media screen and (max-width:700px){
+    nav ul{
+        width: 60%;
+    }
+    .main{
+        opacity: 0;
+    }
+}
+
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    nav ul{
+        position: absolute;
+        right: 8px;
+        height: 92vh;
+        top: 8vh;
+        background:mediumpurple;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in;
+        z-index: 1;
+    }
+    nav li{
+        opacity: 0;
+    }
+
+    nav .folder div{
+        display: block;
+    }
+}
+.display1{
+    transform: translateX(0%);
+}
+
+
+
+
+
+
+.toggle .l1{
+    transform: rotate(-45deg) translate(-4px, 10px);
+}
+.toggle .l2{
+    opacity: 0;
+}
+.toggle .l3{
+    transform: rotate(45deg) translate(-4px, -10px);
+}
+
+
+@keyframes animationlinks {
+    from{
+        opacity: 0;
+        transform:translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes openfolder {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(700px);
+    }
+}
+.main .rotation{
+    animation: rotation 2s infinite linear;
+}
+
+
